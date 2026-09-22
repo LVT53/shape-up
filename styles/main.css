@@ -4,12 +4,58 @@ body {
 
 h1 {
   font-size: 3rem;
+  color: steelblue;
+  font-style: italic;
+  text-shadow: steelblue 1px 3px 7px;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: .9rem;
+}
+
+main a {
+  font-weight: bold;
+  color: maroon;
+}
+
+main a:hover,
+main a:focus {
+  color: steelblue;
+}
+
+aside a {
+  font-weight: bold;
+  color: steelblue;
+}
+
+aside a:hover,
+aside a:focus {
+  color: maroon;
+}
+
+.hero img {
+  float: left;
+  margin: 0 3rem 0 0;
+}
+
+.hero h1,
+.hero h2 {
+  width: 100%;
+}
+
+li {
+  padding-bottom: .2rem;
+}
+
+footer p {
+  text-align: center;
+  font-size: .8rem;
 }
