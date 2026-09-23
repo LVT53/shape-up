@@ -1,0 +1,104 @@
+body {
+  font-family: sans-serif;
+  width: 900px;
+  border: solid 2px steelblue;
+  box-shadow: #000 0 6px 20px;
+  margin: 0 auto;
+}
+
+.body-wrap {
+  vertical-align: top;
+  font-size: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  color: steelblue;
+  font-style: italic;
+  text-shadow: steelblue 1px 3px 7px;
+  margin: .5rem 0 1rem 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin: 0 0 2rem 0;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: .9rem;
+}
+
+main {
+  display: inline-block;
+  width: 586px;
+}
+
+main a {
+  font-weight: bold;
+  color: maroon;
+}
+
+main a:hover,
+main a:focus {
+  color: steelblue;
+}
+
+aside {
+  padding: 1rem 2rem 0 2rem;
+  width: 245px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+aside h3 {
+  color: maroon;
+}
+
+aside a {
+  font-weight: bold;
+  color: steelblue;
+}
+
+aside a:hover,
+aside a:focus {
+  color: maroon;
+}
+
+.hero {
+  border-bottom: solid 2px steelblue;
+  background: linear-gradient(to bottom, #fff, lightsteelblue);
+  padding: 0 0 0 2rem;
+}
+
+.hero img {
+  float: left;
+  margin: 0 3rem 0 0;
+}
+
+.hero h1,
+.hero h2 {
+  width: 100%;
+}
+
+li {
+  padding-bottom: .2rem;
+}
+
+.main_content {
+  padding: 2rem;
+}
+
+footer {
+  background-color: steelblue;
+  padding: .2rem 0;
+}
+
+footer p {
+  text-align: center;
+  font-size: .8rem;
+  color: #fff;
+}
