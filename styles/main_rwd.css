@@ -5,6 +5,7 @@ body {
   border: solid 2px steelblue;
   box-shadow: #000 0 6px 20px;
   margin: 0 auto;
+  font-size: 1rem;
 }
 
 h1 {
@@ -100,4 +101,19 @@ footer p {
   text-align: center;
   font-size: .8rem;
   color: #fff;
+}
+
+@media (max-width: 900px) {
+  body {
+    box-shadow: none;
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 479px) {
+
 }
