@@ -133,6 +133,17 @@ footer p {
   color: black;
 }
 
+.icon-row-span img {
+  width: 32px;
+  margin-right: .6rem;
+  vertical-align: middle;
+}
+
+footer a:hover,
+footer a:focus {
+  color: black;
+}
+
 @media screen and (max-width: 900px) {
   body {
     box-shadow: none;
