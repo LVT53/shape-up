@@ -1,14 +1,10 @@
 body {
   font-family: sans-serif;
-  width: 900px;
+  width: 1024px;
+  max-width: 95%;
   border: solid 2px steelblue;
   box-shadow: #000 0 6px 20px;
   margin: 0 auto;
-}
-
-.body-wrap {
-  vertical-align: top;
-  font-size: 0;
 }
 
 h1 {
@@ -34,7 +30,7 @@ p {
 
 main {
   display: inline-block;
-  width: 586px;
+  width: 57%;
 }
 
 main a {
@@ -49,7 +45,7 @@ main a:focus {
 
 aside {
   padding: 1rem 2rem 0 2rem;
-  width: 245px;
+  width: 33%;
   display: inline-block;
   vertical-align: top;
 }
@@ -77,6 +73,9 @@ aside a:focus {
 .hero img {
   float: left;
   margin: 0 3rem 0 0;
+  min-width: 70px;
+  max-width: 140px;
+  width: 100%;
 }
 
 .hero h1,
