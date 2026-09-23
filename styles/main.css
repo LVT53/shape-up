@@ -6,6 +6,11 @@ body {
   margin: 0 auto;
 }
 
+.body-wrap {
+  vertical-align: top;
+  font-size: 0;
+}
+
 h1 {
   font-size: 3rem;
   color: steelblue;
@@ -27,6 +32,11 @@ p {
   font-size: .9rem;
 }
 
+main {
+  display: inline-block;
+  width: 586px;
+}
+
 main a {
   font-weight: bold;
   color: maroon;
@@ -38,7 +48,14 @@ main a:focus {
 }
 
 aside {
-  padding: 0 2rem;
+  padding: 1rem 2rem 0 2rem;
+  width: 245px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+aside h3 {
+  color: maroon;
 }
 
 aside a {
