@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+
 body {
   font-family: sans-serif;
   width: 1024px;
@@ -143,6 +145,28 @@ footer p {
   text-align: center;
   font-size: .8rem;
   color: #fff;
+}
+
+.stress-tips-grid {
+  display: grid;
+  grid-template-areas:
+  "stress-tips-grid-span img";
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  padding-bottom: 1rem;
+}
+
+.stress-img {
+  border: 2px solid black;
+  max-width: 200px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.fancy {
+  font-family: 'Mea+Culpa', cursive;
 }
 
 @media screen and (max-width: 900px) {
