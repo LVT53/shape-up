@@ -103,17 +103,22 @@ footer p {
   color: #fff;
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   body {
     box-shadow: none;
     font-size: .9rem;
   }
 }
 
-@media (max-width: 767px) {
-
+@media screen and (max-width: 767px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
 }
 
-@media (max-width: 479px) {
-
+@media screen and (max-width: 479px) {
+  body {
+    box-shadow: none;
+    font-size: .75rem;
+  }
 }
