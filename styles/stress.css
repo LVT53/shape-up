@@ -11,10 +11,37 @@ body {
 .grid-container {
   display: grid;
   grid-template-areas:
-    "header header"
     "aside main"
     "footer footer";
   grid-template-columns: 5fr 10fr;
+}
+
+.nav {
+  background-color: steelblue;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  list-style: none;
+}
+
+.nav ul li {
+  text-align: center;
+}
+
+.nav ul li a {
+  display: inline-block;
+  padding: .8rem 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav ul li a.active {
+  color: black;
 }
 
 h1 {
@@ -150,10 +177,19 @@ footer p {
   .grid-container {
     grid-template-areas:
     "header"
+    "nav"
     "main"
     "aside"
     "footer";
     grid-template-columns: 1fr;
+  }
+
+  .nav ul {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
   }
 }
 
