@@ -118,7 +118,7 @@ footer p {
   background-color: steelblue;
 }
 
-.nav ul {
+.nav > ul {
   margin: 0;
   padding: 0;
   display: grid;
@@ -126,19 +126,53 @@ footer p {
   list-style: none;
 }
 
-.nav ul li {
+.nav > ul > li {
+  position: relative;
   text-align: center;
 }
 
-.nav ul li a {
-  display: inline-block;
+.nav > ul > li > a {
+  display: block;
   padding: .8rem 1rem;
   text-decoration: none;
   color: #fff;
   font-weight: bold;
 }
 
-.nav ul li a.active {
+.nav a.active {
+  color: black;
+}
+
+.nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  list-style: none;
+  background-color: steelblue;
+  z-index: 10;
+}
+
+.nav ul li:hover > ul {
+  display: block;
+}
+
+.nav ul ul a {
+  display: block;
+  padding: .6rem 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.nav a:hover,
+.nav a:focus {
+  background-color: lightsteelblue;
   color: black;
 }
 
@@ -187,12 +221,18 @@ footer a:focus {
     grid-template-columns: 1fr;
   }
 
-  .nav ul {
+  .nav > ul {
     margin: 0;
     padding: 0;
     display: grid;
     grid-template-columns: 1fr;
     list-style: none;
+  }
+
+  .nav ul ul {
+    display: block;
+    position: static;
+    min-width: 0;
   }
 }
 
