@@ -1,15 +1,15 @@
-var $ = function(id) {
-    return document.getElementById(id);
+const feet = document.getElementById("feet");
+const inch = document.getElementById("inch");
+const weight = document.getElementById("weight");
+const bmiResult = document.getElementById("bmi_result");
+const calculateButton = document.getElementById("calculate");
+
+// Add updateBMI()
+function updateBMI() {
+  let heightInInches = parseInt(feet.value) * 12 + parseInt(inch.value);
+  let bmi = (parseInt(weight.value) / (heightInInches * heightInInches)) * 703;
+  bmiResult.value = bmi.toFixed(2);
 }
-var calculateBMI = function() {
-    var feet = parseInt($("feet").value);
-    var inches = parseInt($("inch").value);
-    var weight = parseInt($("weight").value);
-    var height = (feet * 12 + inches);
-    var height_squared = Math.pow(height, 2);
-    var bmi = (weight / height_squared) * 703;
-    $("bmi_result").value = bmi.toFixed(2);             
-}
-window.onload = function() {
-    $("calculate").onclick = calculateBMI;
-}
+
+// Add a click rule for the Calculate button
+calculateButton.addEventListener("click", updateBMI);

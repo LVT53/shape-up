@@ -1,25 +1,42 @@
-"use strict";
-$(document).ready(function() {
-	// preload images
-	$("#image_list a").each(function() {
-		var swappedImage = new Image();
-		swappedImage.src = $(this).attr("href");
-	});
-	
-	// set up event handlers for links    
-	$("#image_list a").click(function(evt) {
-		// swap image
-		var imageURL = $(this).attr("href");
-		$("#image").attr("src", imageURL);
-		
-		//swap caption
-		var caption = $(this).attr("title");
-		$("#caption").text(caption);
-				
-		// cancel the default action of the link
-	    evt.preventDefault();  // jQuery method that's cross-browser compatible
-	}); // end click
-	
-	// move focus to first thumbnail
-	$("li:first-child a:first-child").focus();
-}); // end ready
+let caption = "Healthy food";
+const imageMain = document.getElementById("image_main");
+const image0 = document.getElementById("image0");
+const image1 = document.getElementById("image1");
+const image2 = document.getElementById("image2");
+const image3 = document.getElementById("image3");
+const captionDisplay = document.getElementById("caption");
+
+// Add updateImageMain()
+function updateImageMain(link) {
+  imageMain.src = link.href;
+
+}
+// Add updateCaption()
+function updateCaption() {
+  captionDisplay.innerText = caption;
+}
+// Add one click rule per thumbnail link (image0 ... image3)
+image0.addEventListener("click", function (event) {
+  event.preventDefault();
+  updateImageMain(image0);
+  caption = "Healthy breakfast"
+  updateCaption();
+});
+image1.addEventListener("click", function (event) {
+  event.preventDefault();
+  updateImageMain(image1);
+  caption = "Healthy lunch"
+  updateCaption();
+});
+image2.addEventListener("click", function (event) {
+  event.preventDefault();
+  updateImageMain(image2);
+  caption = "Healthy dinner"
+  updateCaption();
+});
+image3.addEventListener("click", function (event) {
+  event.preventDefault();
+  updateImageMain(image3);
+  caption = "Healthy desert"
+  updateCaption();
+});
