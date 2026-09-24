@@ -190,6 +190,28 @@ textarea {
   font-size: .9rem;
 }
 
+#image_list a {
+  display: inline-block;
+  margin: 0 .5rem .5rem 0;
+}
+
+#image_list img {
+  width: 90px;
+  border: 2px solid black;
+  vertical-align: middle;
+}
+
+#image {
+  display: block;
+  max-width: 320px;
+  border: 2px solid black;
+}
+
+#caption {
+  color: maroon;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 900px) {
   body {
     box-shadow: none;
