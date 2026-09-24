@@ -3,13 +3,134 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Shape Up! | Meal Plan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../images/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="../styles/diet.css" rel="stylesheet">
+  <title>Shape Up! | Meal Plan</title>
 </head>
 
 <body>
-	<main>
-	    <h1>Meal Plan</h1>
-		<h2>Under Construction</h2>	    
-	</main>
+  <div class="hero">
+    <img alt="shape up logo" src="../images/shape_up_logo.webp">
+    <div>
+      <h1>Shape up!</h1>
+      <h2>Find the best fit for you</h2>
+    </div>
+  </div>
+  <div class="nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Strength Training</a></li>
+      <li><a href="#">Cardio Exercises</a></li>
+      <li><a href="#">Stress Relief</a></li>
+      <li><a class="active" href="#">Healthy Diets</a></li>
+    </ul>
+  </div>
+  <div class="grid-container">
+    <main>
+      <div class="main_content">
+        <h2>Meal plan order form</h2>
+        <p>
+          Fill out the form as completely as possible and we will email you a weekly meal plan, customized for you&mdash;your lifestyle, your goals, and your personal needs (Asterisks (*) indicate required entries.)
+        </p>
+        <form action="meal_request.html">
+          <fieldset>
+            <legend>Tell us about yourself</legend>
+            <div>
+              <label for="full_name">* Full name:</label>
+              <input type="text" id="full_name" name="full_name" required autofocus>
+            </div>
+            <div>
+              <label for="email">* E-Mail:</label>
+              <input type="text" id="email" name="email" required>
+            </div>
+            <div>
+              <label for="gender">Gender:</label>
+              <select id="gender" name="gender">
+                <option>Select a gender</option>
+                <option>Female</option>
+                <option>Male</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="height">Height:</label>
+              <input type="text" id="height" name="height" placeholder="Example: 5ft, 6in">
+            </div>
+            <div>
+              <label for="weight">Weight:</label>
+              <input type="text" id="weight" name="weight" placeholder="Example: 145lbs">
+            </div>
+            <div>
+              <label for="age">Age:</label>
+              <select id="age" name="age">
+                <option>Select your age</option>
+                <option>Under 18</option>
+                <option>18 - 29</option>
+                <option>30 - 44</option>
+                <option>45 - 59</option>
+                <option>60 or over</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Lifestyle and goals</legend>
+            <p>Which currently matches your present lifestyle?</p>
+            <label><input type="radio" name="lifestyle" value="active"> Active</label>
+            <label><input type="radio" name="lifestyle" value="moderate"> Moderate</label>
+            <label><input type="radio" name="lifestyle" value="sedentary"> Sedentary</label>
+
+            <p>Are you planning to increase your activity level as you change your diet?</p>
+            <label><input type="radio" name="increase_activity" value="yes"> Yes</label>
+            <label><input type="radio" name="increase_activity" value="no"> No</label>
+
+            <p>What are your weight goals?</p>
+            <label><input type="radio" name="weight_goals" value="gain"> Gain weight</label>
+            <label><input type="radio" name="weight_goals" value="lose"> Lose weight</label>
+            <label><input type="radio" name="weight_goals" value="maintain"> Maintain current weight</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Food preferences and restrictions</legend>
+            <p>Do you have any dietary restrictions? (select all that apply)</p>
+            <label><input type="checkbox" name="restrictions" value="vegetarian"> Vegetarian</label>
+            <label><input type="checkbox" name="restrictions" value="gluten-free"> Gluten-free</label>
+            <label><input type="checkbox" name="restrictions" value="kosher"> Kosher</label>
+            <label><input type="checkbox" name="restrictions" value="low-salt"> Low salt</label>
+            <div>
+              <label for="other">Other, please explain:</label>
+              <textarea id="other" name="other" rows="3"></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Comments</legend>
+            <p>Include any additional information that will help us develop a custom menu designed to match your lifestyle and your goals.</p>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+          </fieldset>
+
+          <fieldset>
+            <legend>Process your information</legend>
+            <input type="submit" value="Submit your plan">
+            <input type="reset" value="Start over">
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <aside>
+      <h3>Additional resources</h3>
+      <ul>
+        <li><a href="#">Physical activity and health</a></li>
+        <li><a href="#">Stretching exercises</a></li>
+        <li><a href="#">Strength training</a></li>
+        <li><a href="#">Cardiovascular training</a></li>
+        <li><a href="#">Yoga workout</a></li>
+      </ul>
+    </aside>
+    <footer>
+      <p>&copy; 2022 Shape Up!</p>
+    </footer>
+  </div>
 </body>
 </html>
