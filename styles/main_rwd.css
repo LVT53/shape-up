@@ -8,6 +8,14 @@ body {
   font-size: 1rem;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "aside main"
+    "footer footer";
+  grid-template-columns: 5fr 10fr;
+}
+
 h1 {
   font-size: 3rem;
   color: steelblue;
@@ -31,7 +39,7 @@ p {
 
 main {
   display: inline-block;
-  width: 57%;
+  grid-area: main;
 }
 
 main a {
@@ -46,10 +54,9 @@ main a:focus {
 
 aside {
   padding: 1rem 2rem 0 2rem;
-  width: 33%;
   display: inline-block;
   vertical-align: top;
-  float: left;
+  grid-area: aside;
 }
 
 aside h3 {
@@ -70,6 +77,7 @@ aside a:focus {
   border-bottom: solid 2px steelblue;
   background: linear-gradient(to bottom, #fff, lightsteelblue);
   padding: 0 0 0 2rem;
+  grid-area: header;
 }
 
 .hero img {
@@ -96,6 +104,7 @@ li {
 footer {
   background-color: steelblue;
   padding: .2rem 0;
+  grid-area: footer;
 }
 
 footer p {
@@ -156,13 +165,7 @@ footer a:focus {
     font-size: 1.5rem;
   }
 
-  main,
   aside {
-    width: 100%;
-  }
-
-  aside {
-    float: unset;
     padding: 1rem 2rem 1rem 2rem;
   }
 
@@ -174,7 +177,23 @@ footer a:focus {
     padding: 2rem 2rem 0 2rem;
   }
 
+  .grid-container {
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer";
+    grid-template-columns: 1fr;
+  }
 
+  .nav ul {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+  }
 }
 
 @media screen and (max-width: 479px) {
